@@ -1,0 +1,17 @@
+
+<div class="row flex-center">
+  <div *ngFor="let value of values" class="card margin" style="width: 15rem;" >
+    <img src="{{value.imageUrl}}" alt="">
+    <div class="card-body">
+      <h4 class="card-title">{{value.name}}</h4>
+      <h5 class="card-subtitle">{{value.name}}</h5>
+      <p class="card-text">{{value.price}}€</p>
+      <p class="card-text">{{value.description}}</p>
+      <button class="btn-secondary" (click)="addToCart()">Ajouter au panier</button>
+    </div>
+  </div>
+</div>
+
+
+
+
