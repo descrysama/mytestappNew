@@ -11,10 +11,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   shoppingCart:any = '';
-
-  addItem() {
-    console.log('wesh');
-    
-  }
   
 }
