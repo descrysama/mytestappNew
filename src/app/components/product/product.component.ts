@@ -10,8 +10,8 @@ export class ProductComponent implements OnInit {
   
   @Output() newItemEvent = new EventEmitter<any>();
 
-  addToCart() {
-    this.newItemEvent.emit()
+  addToCart(valueFromEvent: any) {
+    this.newItemEvent.emit(valueFromEvent)
   }
 
   values:any[] = [

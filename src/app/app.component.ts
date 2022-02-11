@@ -11,5 +11,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   shoppingCart:any = [];
+
+  addToCart(element: any) {
+    this.shoppingCart.push(element)
+    console.log(this.shoppingCart);
+  }
   
 }
